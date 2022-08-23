@@ -1,10 +1,29 @@
-import React from 'react';
-import '../styles/rockets.css';
+// import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import Rocket from './Rocket';
+// import { fetchRocket } from '../redux/rockets/rocket';
 
-function Rockets() {
+const Rockets = () => {
+  const rockets = useSelector((state) => state.rockets);
+  // const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   dispatch(fetchRocket());
+  // }, [dispatch]);
+
   return (
-    <div>Rockets</div>
+    <div className="rockets-container">
+      {rockets.map((rocket) => (
+        <Rocket
+          key={rocket.id}
+          id={rocket.id}
+          name={rocket.name}
+          type={rocket.type}
+          flickrImages={rocket.flickrImages}
+        />
+      ))}
+    </div>
   );
-}
+};
 
 export default Rockets;
