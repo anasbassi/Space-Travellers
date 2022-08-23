@@ -1,27 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/rockets.css';
 
 const Rocket = (props) => {
   const {
-    id, name, type, flickrImages,
+    id, name, type, flickrImage,
   } = props;
 
   return (
-    <div className="rocket-container">
-      <p>{id}</p>
-      <p>{name}</p>
-      <p>{type}</p>
-      <img src={flickrImages} alt="Rocket-Img" />
+    <div id={id} className="rocket-container">
+      <img src="https://imgur.com/DaCfMsj.jpg" alt="Rocket-Img" />
+      <p>{flickrImage}</p>
+      <div className="rocket-details">
+        <h2>{name}</h2>
+        <p>{type}</p>
+        <button type="button">Reserve Rocket</button>
+      </div>
     </div>
   );
 };
 
 Rocket.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  flickrImages: PropTypes.string.isRequired,
+  flickrImage: PropTypes.string.isRequired,
 };
 
 export default Rocket;

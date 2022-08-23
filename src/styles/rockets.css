@@ -1,3 +1,33 @@
 body {
   margin: 0;
 }
+
+.rockets-container {
+  margin: 40px 5%;
+}
+
+.rocket-container {
+  display: flex;
+  margin: 30px 1%;
+}
+
+.rocket-container img {
+  width: 300px;
+}
+
+.rocket-details {
+  margin: 0 30px;
+}
+
+.rocket-details p {
+  font-size: 20px;
+}
+
+.rocket-details button {
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  background-color: #007bff;
+  border-radius: 7px;
+  border: none;
+}
