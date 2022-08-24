@@ -25,6 +25,11 @@
   color: black;
 }
 
+.nav-items > *:active {
+  text-decoration: underline;
+  color: black;
+}
+
 .logo {
   width: 33%;
   display: flex;
