@@ -1,4 +1,6 @@
 const FETCH_ROCKET = 'spacetravelers/rockets/FETCH_ROCKET';
+const BOOK_ROCKET = 'spacetravelers/rockets/BOOK_ROCKET';
+const UNBOOK_ROCKET = 'spacetravelers/rockets/UNBOOK_ROCKET';
 
 const initialState = [];
 
@@ -6,6 +8,20 @@ const rocketReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_ROCKET:
       return action.rocket;
+    case BOOK_ROCKET:
+      return state.map((rocket) => {
+        if (rocket.id !== action.payload) {
+          return rocket;
+        }
+        return { ...rocket, reserved: true };
+      });
+    case UNBOOK_ROCKET:
+      return state.map((rocket) => {
+        if (rocket.id !== action.payload) {
+          return rocket;
+        }
+        return { ...rocket, reserved: false };
+      });
     default:
       return state;
   }
@@ -14,6 +30,16 @@ const rocketReducer = (state = initialState, action) => {
 export const fetchRocket = (rocket) => ({
   type: FETCH_ROCKET,
   rocket,
+});
+
+export const bookRocket = (id) => ({
+  type: BOOK_ROCKET,
+  payload: id,
+});
+
+export const unbookRocket = (id) => ({
+  type: UNBOOK_ROCKET,
+  payload: id,
 });
 
 export const fetchRocketApi = () => async (dispatch) => {
