@@ -17,15 +17,16 @@ export const fetchRocket = (rocket) => ({
 });
 
 export const fetchRocketApi = () => async (dispatch) => {
-  const response = await fetch('https://api.spacexdata.com/v3/rockets');
-  const data = await response.json();
-  const rocketsFetched = data.map((rocket) => ({
-    id: rocket.rocket_id,
+  const result = await fetch('https://api.spacexdata.com/v3/rockets');
+  const json = await result.json();
+  const rockets = json.map((rocket) => ({
+    id: rocket.id,
     name: rocket.rocket_name,
-    type: rocket.description,
-    flickerImage: rocket.flickr_image,
+    description: rocket.description,
+    image: rocket.flickr_images[0],
+    reserved: false,
   }));
-  dispatch(fetchRocket(rocketsFetched));
+  dispatch(fetchRocket(rockets));
 };
 
 export default rocketReducer;

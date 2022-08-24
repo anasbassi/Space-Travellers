@@ -8,23 +8,27 @@ body {
 
 .rocket-container {
   display: flex;
-  margin: 30px 1%;
+  margin: 30px 4%;
 }
 
 .rocket-container img {
-  width: 300px;
+  width: 250px;
 }
 
 .rocket-details {
   margin: 0 30px;
 }
 
+.rocket-details h2 {
+  margin-top: 0;
+}
+
 .rocket-details p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .rocket-details button {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   padding: 10px;
   background-color: #007bff;
