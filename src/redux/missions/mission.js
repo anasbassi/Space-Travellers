@@ -1,12 +1,6 @@
 const FETCH_MISSION = 'spacetravelers/missions/FETCH_MISSION';
 
-const initialState = [
-  {
-    id: 1,
-    name: 'ife',
-    description: 'i dey with you',
-  },
-];
+const initialState = [];
 
 const missionReducer = (state = initialState, action) => {
   switch (action.type) {

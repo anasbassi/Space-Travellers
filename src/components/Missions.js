@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchMissionApi } from '../redux/missions/Mission';
+import { fetchMissionApi } from '../redux/missions/mission';
 import Mission from './Mission';
 
 const Missions = () => {
@@ -8,18 +8,29 @@ const Missions = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchMission());
+    dispatch(fetchMissionApi());
   }, [dispatch]);
 
   return (
     <div className="Missions-container">
-      {missions.map((mission) => (
-        <Mission
-          id={mission.mission_id}
-          name={mission.mission_name}
-          description={mission.description}
-        />
-      ))}
+      <table>
+        <tbody>
+          <tr className="table-main">
+            <th className="mission">Mission</th>
+            <th className="description">Description</th>
+            <th className="status">Status</th>
+            <th className="member hide">Mission</th>
+          </tr>
+          {missions.map((mission) => (
+            <Mission
+              key={mission.id}
+              id={mission.id}
+              name={mission.name}
+              description={mission.description}
+            />
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
