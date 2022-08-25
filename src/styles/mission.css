@@ -9,7 +9,8 @@ body {
 
 table {
   border: 1px solid black;
-  width: 98%;
+  width: 95%;
+  margin: 0 auto;
   border-collapse: collapse;
 }
 
@@ -42,7 +43,7 @@ td {
 }
 
 .description {
-  width: 60%;
+  width: 50%;
   text-align: left;
   padding-left: 10px;
 }
