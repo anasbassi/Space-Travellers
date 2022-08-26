@@ -1,46 +1,56 @@
-# Getting Started with Create React App and Redux
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Space-Travellers
 
-## Available Scripts
+> A Web Appplication written with React and Redux which allows users to book rockets and join selected space missions.
 
-In the project directory, you can run:
+## Built With
 
-### `npm start`
+- React.js
+- Redux
+- JavaScript
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Get Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To get a local copy of this calculator, Please follow these simple example steps.
 
-### `npm test`
+1. Open Git Bash.
+2. Change the current working directory to the location where you want the cloned directory.
+ Ex: `C:User\your computer name\ cd <<your folder you want to clone to>>`
+3. Copy/Past this command :  `https://github.com/anasbassi/Space-Travellers.git`  then press Enter
+4. Run this command `code .` to open this folder in VScode
+5. Open terminal and run this command `npm install`
+6. after finishing step 5, run this command `npm start` to run the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Authors
 
-### `npm run build`
+👤 **Anas Abubakar Bassi**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- GitHub: [@anasbassi](https://github.com/anasbassi)
+- Twitter: [@anasabu92568449](https://twitter.com/anasabu92568449)
+- LinkedIn: [Anas Abubakar](https://linkedin.com/in/anas-abubakar-7b352722b)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+👤 **Johnson Emmanuel**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- GitHub: []()
+- LinkedIn: []()
+- Twitter: []()
 
-### `npm run eject`
+## 🤝 Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Contributions, issues, and feature requests are welcome!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Feel free to check the [issues page](../../issues/).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Show your support
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Give a ⭐️ if you like this project!
 
-## Learn More
+## Acknowledgments
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Microverse
+- The lazy codders
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📝 License
+
+This project is [**MIT**](./MIT.md) licensed.

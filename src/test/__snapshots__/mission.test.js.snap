@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions page component Check if table of missions available 1`] = `
+<th
+  class="description"
+>
+  Description
+</th>
+`;
+
+exports[`Missions page component Should Active Member badge available 1`] = `
+Array [
+  <span
+    class="yes"
+  >
+    Active Member
+  </span>,
+  <span
+    class="yes"
+  >
+    Active Member
+  </span>,
+]
+`;
+
+exports[`Missions page component Should Leave Mission button available 1`] = `
+Array [
+  <button
+    class="leave"
+    type="button"
+  >
+    Leave Mission 
+  </button>,
+]
+`;
+
+exports[`Missions page component Should NOT A MEMBER badge available 1`] = `
+Array [
+  <span
+    class="not"
+  >
+    NOT A MEMBER
+  </span>,
+  <span
+    class="not"
+  >
+    NOT A MEMBER
+  </span>,
+  <span
+    class="not"
+  >
+    NOT A MEMBER
+  </span>,
+  <span
+    class="not"
+  >
+    NOT A MEMBER
+  </span>,
+  <span
+    class="not"
+  >
+    NOT A MEMBER
+  </span>,
+  <span
+    class="not"
+  >
+    NOT A MEMBER
+  </span>,
+  <span
+    class="not"
+  >
+    NOT A MEMBER
+  </span>,
+  <span
+    class="not"
+  >
+    NOT A MEMBER
+  </span>,
+  <span
+    class="not"
+  >
+    NOT A MEMBER
+  </span>,
+  <span
+    class="not"
+  >
+    NOT A MEMBER
+  </span>,
+]
+`;
