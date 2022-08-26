@@ -8,8 +8,10 @@ const Missions = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchMissionApi());
-  }, [dispatch]);
+    if (missions.length === 0) {
+      dispatch(fetchMissionApi());
+    }
+  }, []);
 
   return (
     <div className="Missions-container">

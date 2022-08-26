@@ -9,8 +9,10 @@ const Rockets = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchRocketApi());
-  }, [dispatch]);
+    if (rockets.length === 0) {
+      dispatch(fetchRocketApi());
+    }
+  }, []);
 
   return (
     <div className="rockets-container">
