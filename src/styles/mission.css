@@ -61,3 +61,17 @@ td {
   border: 2px solid grey;
   padding: 10px;
 }
+
+.yes {
+  background-color: rgba(38, 125, 240, 0.877);
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.leave {
+  color: red;
+  border: 2px solid red;
+  padding: 10px;
+}

@@ -1,11 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { bookMission, unbookMission } from '../redux/missions/mission';
 import '../styles/mission.css';
 
 const Mission = (props) => {
   const {
-    id, name, description,
+    id, name, description, reserved,
   } = props;
+
+  const dispatch = useDispatch();
+  const reserve = () => {
+    dispatch(bookMission(id));
+  };
+
+  const unsubscribe = () => {
+    dispatch(unbookMission(id));
+  };
 
   return (
     <tr id={id} className="table-support">
@@ -15,12 +26,11 @@ const Mission = (props) => {
         {' '}
       </td>
       <td className="mission1 status-name">
-        <span className="not">NOT A MEMBER</span>
-        {' '}
+        <span className={reserved ? 'yes' : 'not'}>{reserved ? 'Active Member' : 'NOT A MEMBER'}</span>
       </td>
       <td className="mission1 member-name">
-        <span className="join">Join Mission</span>
-        {' '}
+        {!reserved ? <button type="button" className="join" onClick={reserve}>Join Mission</button>
+          : <button type="button" className="leave" onClick={unsubscribe}>Leave Mission </button>}
       </td>
     </tr>
   );
@@ -30,6 +40,7 @@ Mission.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  reserved: PropTypes.bool.isRequired,
 };
 
 export default Mission;
