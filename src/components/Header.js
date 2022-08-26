@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from '../images/space-travellers.png';
 import '../styles/header.css';
 
@@ -10,9 +10,9 @@ const Navbar = () => (
         <h1>Space Traveller&#039;s Hub</h1>
       </div>
       <nav className="nav-items">
-        <Link to="/">Rockets</Link>
-        <Link to="/missions">Missions</Link>
-        <Link to="/profile">Profile</Link>
+        <NavLink to="/">Rockets</NavLink>
+        <NavLink to="/missions">Missions</NavLink>
+        <NavLink to="/profile">Profile</NavLink>
       </nav>
     </div>
     <div className="avatar" />
