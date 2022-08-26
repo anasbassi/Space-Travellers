@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.display-section {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.display-section ul {
+  list-style: none;
+  font-size: 20px;
+  padding: 0;
+}
+
+.display-section li {
+  border: 1px solid black;
+  padding: 15px;
+}

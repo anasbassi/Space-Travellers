@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+}
+
+.rockets-container {
+  margin: 40px 5%;
+}
+
+.rocket-container {
+  display: flex;
+  margin: 30px 4%;
+}
+
+.rocket-container img {
+  width: 250px;
+}
+
+.rocket-details {
+  margin: 0 30px;
+}
+
+.rocket-details h2 {
+  margin-top: 0;
+}
+
+.rocket-details p {
+  font-size: 18px;
+}
+
+.badge {
+  background-color: #007bff;
+  font-size: 12px;
+  color: white;
+  padding: 3px;
+  border-radius: 7px;
+  margin-right: 10px;
+}
+
+.reserve {
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+  background-color: #007bff;
+  border-radius: 7px;
+  border: none;
+}
+
+.cancel {
+  font-size: 16px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 7px;
+}
