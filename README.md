@@ -32,9 +32,9 @@ To get a local copy of this calculator, Please follow these simple example steps
 
 👤 **Johnson Emmanuel**
 
-- GitHub: []()
-- LinkedIn: []()
-- Twitter: []()
+- GitHub: [Johnson](https://github.com/ifzyy)
+- LinkedIn: [Johnson](https://www.linkedin.com/in/johnson-emmanuel-907a79239)
+- Twitter: [Joohnson](https://twitter.com/Johnson32325986)
 
 ## 🤝 Contributing
 
